@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css
+    "
+      rel="stylesheet"
+    />
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js
+"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Hamza Kurdi Portfolio | Headstarter Project 1</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/images/logos/logo.png" alt="dev-logo" />
+      </a>
+
+      <i class="ri-menu-line" id="hamburger-menu"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active"> Home </a>
+        <a href="#about"> About </a>
+        <a href="#services"> Services </a>
+        <a href="#projects"> Projects </a>
+        <a href="#contact"> Contact </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+          <h4>who is hlk?</h4>
+          <h1>Hamza Kurdi</h1>
+          <h3>
+            <span id="who-are-you"></span>
+          </h3>
+          <p>
+            My passion for AI has led me to utilize cutting-edge resources like
+            TensorFlow and PyTorch, driving innovation and efficiency in my
+            projects. I'm particularly excited about my role as an AI engineer
+            through the Headstarter fellowship, where I continue to explore the
+            limitless possibilities of AI and make impactful contributions to
+            the tech community.
+          </p>
+          <div class="socials">
+            <a href="https://github.com/hkurdi/">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hamza-al-kurdi/">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+          <a href="assets/Hamza L. A. Kurdi - 2024 Resume.pdf" class="button">
+            Resume
+          </a>
+        </div>
+        <div class="home-image">
+          <img src="assets/images/home.png" alt="home-logo" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-image">
+          <img src="assets/images/about.png" alt="about-image" />
+        </div>
+        <div class="about-content">
+          <!-- <h3>what about hlk?</h3> -->
+          <h2 class="heading">About Me.</h2>
+          <p>
+            My journey in the tech world started at a young age, fueled by a
+            curiosity to understand how things work. Over the years, I have
+            found immense joy in crafting elegant solutions to complex problems,
+            all the while infusing elements of my personality wherever an
+            opportunity arises, ensuring my distinct mark is left behind. As a
+            proud Jordanian-Palestinian with a global perspective, my cultural
+            background shapes my worldview, and I'm always eager to learn from
+            different cultures and experiences.
+            <br />
+            <br />
+            When I'm not immersed in technology, you'll find me expressing my
+            creativity through music production, hitting the gym, or exploring
+            the great outdoors. I'm excited to see where my journey takes me
+            next, and I'm always open to new opportunities and adventures.
+          </p>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <!-- <h3 class="hlk-subtitle">what does hlk do?</h3> -->
+        <h2 class="heading">My Services.</h2>
+        <div class="services-container">
+          <div class="services-box">
+            <i class="ri-code-s-slash-line"></i>
+            <h3>Full Stack Web Development</h3>
+            <p>
+              Expertise in building robust, scalable web applications using
+              modern technologies like React, Node.js, Express, and MongoDB.
+              From designing user-friendly interfaces to developing efficient
+              backend systems, I ensure a seamless user experience.
+            </p>
+            <a href="https://github.com/hkurdi/priceradar" class="button"
+              >Sample of my Work</a
+            >
+          </div>
+          <div class="services-box">
+            <i class="ri-openai-fill"></i>
+            <h3>ML/DL Model Training & Development</h3>
+            <p>
+              Proficient in developing and training machine learning and deep
+              learning models for various applications, including natural
+              language processing, image recognition, and predictive analytics.
+              Leveraging frameworks like TensorFlow and PyTorch to deliver
+              high-performance solutions.
+            </p>
+            <a
+              href="https://github.com/hkurdi/sms-email-spam-classifier"
+              class="button"
+              >Sample of my Work</a
+            >
+          </div>
+          <div class="services-box">
+            <i class="ri-smartphone-line"></i>
+            <h3>Mobile App Development</h3>
+            <p>
+              Skilled in creating intuitive and responsive mobile applications
+              for Android and iOS platforms. Utilizing frameworks such as Swift,
+              React Native, and Flutter to develop cross-platform apps that
+              provide a native look and feel with efficient performance.
+            </p>
+            <a href="https://github.com/hkurdi/CryptoPulse" class="button"
+              >Sample of my Work</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <!-- <h3 class="hlk-subtitle-1">hlk got projects?</h3> -->
+        <h2 class="heading">My Projects.</h2>
+        <div class="projects-container">
+          <div class="project-box">
+            <img src="assets/images/projects/project-1.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>Calories Burned Predictor</h4>
+              <p>
+                End-to-End project that utilizes React.js for FE, Flask
+                API/Python for BE. The pickled model is 92% accurate & trained
+                to predict how many calories you have burned during a workout.
+              </p>
+              <a href="https://calories-burned-predictor.vercel.app/"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="assets/images/projects/project-2.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>ResuMaster</h4>
+              <p>
+                ATS Reviewer that enhances resumes by comparing them with job
+                descriptions and providing a breakdown of the match percentage.
+              </p>
+              <a href="https://resumaster-7e303d0d5845.herokuapp.com/"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="assets/images/projects/project-3.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>SMS/Email Spam Classifier</h4>
+              <p>
+                A machine learning project for classifying SMS and email
+                messages as spam or ham (not spam). The final model achieves an
+                accuracy of 96.9%.
+              </p>
+              <a
+                href="https://sms-email-spam-classifier-hlk-1561a8925f09.herokuapp.com/"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="assets/images/projects/project-4.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>CryptoPulse</h4>
+              <p>
+                Cryptocurrency viewer & crypto portfolio management project
+                built using Swift and SwiftUI. It uses MVVM architecture,
+                Combine, and CoreData.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=BgZcow7uSoY&feature=youtu.be"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="assets/images/projects/project-5.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>Infinity Driver 3D</h4>
+              <p>
+                A 3D Hypercasual Mobile Game built using Unity, with a
+                functioning home menu, score system, lives system, and
+                Android/iOS notification system.
+              </p>
+              <a href="https://www.youtube.com/shorts/XBPGeQzP_2w"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="assets/images/projects/project-6.png" alt="project-img" />
+            <div class="project-layer">
+              <h4>Waves</h4>
+              <p>Spotify Clone Music App built with React.js through Vite.</p>
+              <a href="https://github.com/hkurdi/Waves"
+                ><i class="ri-external-link-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact Me.</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="ec508b89-79c1-4e8f-b9d4-237d90305d11"
+          />
+          <div class="input-box">
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Full Name"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <p class="footer-hlk">
+          &copy; 2024 Hamza Luay Kurdi. All Rights Reserved.
+        </p>
+      </div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/hkurdi/">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hamza-al-kurdi/">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll-up" id="scroll-up"> ↑ </a>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
