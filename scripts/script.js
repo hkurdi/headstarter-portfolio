@@ -81,7 +81,9 @@ const whoAreYou = new Typed("#who-are-you", {
   loop: true,
 });
 
-document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", handleFormSubmit);
 
 function handleFormSubmit(event) {
   event.preventDefault();
@@ -93,30 +95,30 @@ function handleFormSubmit(event) {
     method: form.method,
     body: formData,
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       // console.log('Success:', data);
       form.reset();
       Swal.fire({
-        title: 'Success!',
-        text: 'Your message has been sent successfully.',
-        icon: 'success',
-        confirmButtonText: 'OK',
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        icon: "success",
+        confirmButtonText: "OK",
         customClass: {
-          popup: 'swal-wide',
-        }
+          popup: "swal-wide",
+        },
       });
     })
-    .catch(error => {
+    .catch((error) => {
       // console.error('Error:', error);
       Swal.fire({
-        title: 'Error!',
-        text: 'There was an error sending your message. Please try again.',
-        icon: 'error',
-        confirmButtonText: 'OK',
+        title: "Error!",
+        text: "There was an error sending your message. Please try again.",
+        icon: "error",
+        confirmButtonText: "OK",
         customClass: {
-          popup: 'swal-wide',
-        }
+          popup: "swal-wide",
+        },
       });
     });
 }
